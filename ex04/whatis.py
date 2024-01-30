@@ -1,13 +1,17 @@
-import sys
+from sys import argv
 
 
 def main():
-    assert len(sys.argv) != 1, "no argument is provided"
-    assert len(sys.argv) == 2, "more than one argument is provided"
-    assert sys.argv[1].isdigit(), "argument is not an integer"
+    if len(argv) == 1:
+        return
 
-    number = int(sys.argv[1])
-    print("I'm Even." if not number % 2 else "I'm Odd.")
+    assert len(argv) == 2, "more than one argument is provided"
+
+    try:
+        number = int(argv[1])
+        print("I'm Even." if not number % 2 else "I'm Odd.")
+    except ValueError:
+        raise AssertionError("argument is not an integer")
 
 
 if __name__ == "__main__":
