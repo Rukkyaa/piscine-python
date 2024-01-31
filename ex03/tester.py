@@ -2,6 +2,16 @@ from NULL_not_found import NULL_not_found
 
 
 def main() -> None:
+    """
+    This program checks if the following data structures are NULL
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
+
     Nothing = None
     Garlic = float("NaN")
     Zero = 0

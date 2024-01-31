@@ -2,6 +2,21 @@ from find_ft_type import all_thing_is_obj
 
 
 def main() -> None:
+    """
+    This program checks if the following data structures are objects:
+    - a list
+    - a tuple
+    - a set
+    - a dictionary
+    - a string
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
+
     ft_list = ["Hello", "tata!"]
     ft_tuple = ("Hello", "toto!")
     ft_set = {"Hello", "tutu!"}

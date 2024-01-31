@@ -3,6 +3,17 @@ from datetime import datetime
 
 
 def main() -> None:
+    """
+    This program prints the number of seconds since January 1, 1970.
+    It also prints the current date and time.
+
+    Parameters:
+        None
+
+    Returns:
+        None
+    """
+
     total_seconds = time()
     formatted_seconds = "{:,}".format(total_seconds)
 

@@ -39,7 +39,19 @@ def print_character_counts(string: str) -> None:
 
 
 def main():
-    assert len(argv) in [1, 2], "more than one argument is provided"
+    """
+    This program counts the number of different character types in a string.
+
+    Parameters:
+        argv[1] (str): The string to be analyzed.
+
+    Returns:
+        None
+    """
+
+    if len(argv) > 2:
+        print("AssertionError: more than one argument is provided")
+        return
 
     if len(argv) == 1 or not argv[1]:
         try:
@@ -48,7 +60,7 @@ def main():
         except KeyboardInterrupt:
             print("TRL+C was pressed")
             return
-            
+
     else:
         text = argv[1]
 
